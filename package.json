@@ -1,0 +1,28 @@
+{
+  "name": "bluefish-dataflow",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/main.js",
+  "scripts": {
+    "build": "rimraf dist && rollup -c rollup.config.ts",
+    "watch": "rimraf dist && rollup -wc rollup.config.ts",
+    "start": "node dist/main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^21.0.1",
+    "@rollup/plugin-node-resolve": "^13.0.6",
+    "@rollup/plugin-typescript": "^8.3.0",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.60.1",
+    "typescript": "^4.5.2"
+  },
+  "dependencies": {
+    "graphology": "^0.23.1",
+    "graphology-traversal": "^0.2.2",
+    "graphology-types": "^0.23.0",
+    "rxjs": "^7.4.0"
+  }
+}
